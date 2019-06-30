@@ -1,0 +1,78 @@
+    --bg: #222831;
+    31 */--bg2: #181C22;
+    --bg3: #1A1D24;
+    --bg4: black;
+    --footer-bg: rgba(0, 0, 0, .3);
+    --code: #F59BAC;
+    --code-text: #FAD7A0;
+    --code-text: #FEE6C0;
+    --code-comment: #81899B;
+    --text-color: #F9FFEE;
+    --pale-text: #dfa612;
+    --info-box-text: antiquewhite;
+    --gs0: rgba(239, 187, 53, 0.6);
+    --gs1: rgba(239, 187, 53, 0.6);
+    --green1: #EFBB35;
+    --green2: #E84279;
+    --green3: #dfa612;
+    --top1: #302E24;
+    --top2: #28313E;
+    --subtle-green1: rgba(236, 198, 48, .1);
+    --subtle-green2: #1A1D24;
+    --subtle-yellow3: rgba(236, 198, 48, .1);
+    --fb: #fff;
+    --reddit: #fff;
+ h-news: #fff;
+ twitter: #fff;
+ cat-head: #1A1D24;
+ front-text-color: antiquewhite;
+    info-box-bg: #1A1D24;
+    #f3f0ed
+
+
+-------------------------
+font-style: italic;
+    font-family: "IBM Plex Mono ExtraLight", "Segoe UI", "Helvetica Neue", Helvetica, Roboto, 'Open Sans', FreeSans, sans-serif;
+}
+
+
+-------------------------
+
+.subscribe-follow input[type=submit] {
+    border: 2px solid var(--bg2);
+}
+.subscribe-follow input {
+    font-size: 1.6rem;
+    max-width: 375px;
+    display: inline;
+}
+.button, button, label {
+    cursor: pointer;
+}
+.button, button {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+.button, button.small, div a.button {
+    background-image: linear-gradient(to bottom, var(--bg), var(--bg4));
+    border-radius: 8px;
+    color: var(--green3);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: 0;
+    box-shadow: 0 0 10px var(--subtle);
+    font: inherit;
+    text-decoration: none;
+    transition: transform 0.15s cubic-bezier(0, 1.8, 1, 1.8);
+}
+.button, .top-bar, body, button {
+    position: relative;
+}
+.button, a, button {
+    text-decoration: none;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
