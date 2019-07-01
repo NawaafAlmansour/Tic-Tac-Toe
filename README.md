@@ -27,4 +27,4 @@ By the time you submit this project, you will have covered new ground in, and re
 
 
 
-![Image ](https://i.imgur.com/U5tEw1F.png=250x250)
+![Image ](https://i.imgur.com/U5tEw1F.pngs=400)
