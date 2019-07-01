@@ -27,4 +27,4 @@ By the time you submit this project, you will have covered new ground in, and re
 
 
 
-![Image ](https://imgur.com/U5tEw1F)
+![Image of phone ](https://imgur.com/U5tEw1F)
