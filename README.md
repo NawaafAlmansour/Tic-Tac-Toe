@@ -18,3 +18,6 @@ By the time you submit this project, you will have covered new ground in, and re
 - **Command Line**: Practice interacting with the computer and navigating the filesystem from the command line.
 - **Source Control**: Manage and interact with a git repository to store changes to code.
 - **Programming Fundamentals**: Work with objects, arrays, events, while learning how to strategically solve problems and resolve errors.
+
+
+![Image ](https://i.imgur.com/4rCsLzy.png)
