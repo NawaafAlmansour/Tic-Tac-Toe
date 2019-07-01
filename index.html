@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="Keywords" content="play, tic toc tac">
+  <meta name="language" content="en" />
+  <meta name="description" content="play tic toc tac " />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
@@ -11,7 +14,7 @@
   <link href="fontawesome-free-5.9.0-web/css/solid.css" rel="stylesheet">
   <!--load all styles -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tic toc tac</title>
+  <title>Tic Tac Toc</title>
 </head>
 
 <body>
@@ -36,32 +39,32 @@
           <div class="ruler2"> </div>
         </div>
         <div class="board">
-          <div class="square top left">
-            <div id="x1"></div>
+          <div class="square top left" id="0">
+            <!-- <div id="1"></div> -->
           </div>
-          <div class="square top">
-            <div id="x2"></div>
+          <div class="square top" id="1">
+            <!-- <div id="2"></div> -->
           </div>
-          <div class="square top right">
-            <div id="x3"></div>
+          <div class="square top right" id="2">
+            <!-- <div id="3"></div> -->
           </div>
-          <div class="square middle left">
-            <div id="x4"></div>
+          <div class="square middle left" id="3">
+            <!-- <div id="4"></div> -->
           </div>
-          <div class="square middle" name="5">
-            <div id="x5"></div>
+          <div class="square middle" id="4">
+            <!-- <div id="5"></div> -->
           </div>
-          <div class="square middle right">
-            <div id="x6"></div>
+          <div class="square middle right" id="5">
+            <!-- <div id="6"></div> -->
           </div>
-          <div class="square bottom left">
-            <div id="x7"></div>
+          <div class="square bottom left" id="6">
+            <!-- <div id="7"></div> -->
           </div>
-          <div class="square bottom">
-            <div id="x8"></div>
+          <div class="square bottom" id="7">
+            <!-- <div id="8"></div> -->
           </div>
-          <div class="square bottom right">
-            <div id="x9"></div>
+          <div class="square bottom right" id="8">
+            <!-- <div id="9"></div> -->
           </div>
         </div>
       </div>
@@ -75,6 +78,11 @@
         </button>
         <h2 id="showPlayer">1Player</h2>
       </div>
+      <div class="optionPlay">
+        <button type="button" id="twoPlayer" name="button" onclick="gameMode(id)">two Player</button>
+        <button type="button" id="easyMode" name="button" onclick="gameMode(id)">easy Mode</button>
+        <button type="button" id="hardMode" name="button" onclick="gameMode(id)">hard Mode</button>
+      </div>
   </div>
   </main>
   <footer>
@@ -85,7 +93,7 @@
   <script defer src="fontawesome-free-5.9.0-web/js/brands.js"></script>
   <script defer src="fontawesome-free-5.9.0-web/js/solid.js"></script>
   <script defer src="fontawesome-free-5.9.0-web/js/fontawesome.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
   <!--load all styles -->
 
