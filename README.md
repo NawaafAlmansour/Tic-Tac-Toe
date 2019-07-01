@@ -28,3 +28,14 @@ By the time you submit this project, you will have covered new ground in, and re
 
 
 ![Image ](https://i.imgur.com/U5tEw1F.pngs=400)
+
+
+#  the move with maximum score when it is the AI
+How to make your Tic Tac Toe game unbeatable by using the minimax algorithm
+
+![Image ](https://cdn-media-1.freecodecamp.org/images/K1y8jFFT0JeL14tHaAum8lF2cs7WXsQOOp9j)
+
+
+
+https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/
+
