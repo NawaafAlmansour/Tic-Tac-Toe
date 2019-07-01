@@ -14,6 +14,7 @@ let comp = 1;
 let b =0;
 const cells = document.querySelectorAll('.square');
 console.log(cells);
+let n ;
 
 
 startGame();
@@ -24,6 +25,7 @@ function gameMode(mode){
  console.log(mode);
   if (mode == "twoPlayer") {
          comp = 0;
+         n =0;
    } else if (mode == "easyMode") {
     comp = 1;
     value = 0;
@@ -35,6 +37,8 @@ function gameMode(mode){
   }
 //start Game
 function startGame(){
+  n = n + 1;
+  console.log(n);
   document.querySelector(".endgame").style.display="none";
   document.querySelector(".optionPlay").style.display="block";
   playBord = [0,1,2,3,4,5,6,7,8];
@@ -103,9 +107,9 @@ function gameOver(gameWon) {
 }
 
 
-function declareWinner(who){
+function declareWinner(massage){
         document.querySelector(".endgame").style.display = "block";
-        document.querySelector(".endgame .text").innerText= who;
+        document.querySelector(".endgame .text").innerText= massage;
 }
 
 function emptySquares() {
@@ -186,5 +190,33 @@ for (var i = 0; i < availSpots.length; i++) {
  return moves[bestMove];
 }
 
+
+function bannerFun(inpit) {
+  if (inpit == "Player1Name") {
+  document.querySelector("#Player1Name").style.display="none";
+  document.querySelector("#Player1").style.display="block";
+}else {
+  document.querySelector("#Player2Name").style.display="none";
+  document.querySelector("#Player2").style.display="block";
+}
+}
+
+function keyCode(event,inpit ) {
+  var x = event.keyCode;
+  if (x == 13) {
+    if (inpit == "Player1") {
+    var text = document.getElementById("Player1").value;
+    document.getElementById("Player1Name").innerHTML = text;
+    document.querySelector("#Player1Name").style.display="block";
+  document.querySelector("#Player1").style.display="none";
+}else {
+  var text = document.getElementById("Player2").value;
+  document.getElementById("Player2Name").innerHTML = text;
+  document.querySelector("#Player2Name").style.display="block";
+document.querySelector("#Player2").style.display="none";
+}
+}
+
+}
 
 // https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/

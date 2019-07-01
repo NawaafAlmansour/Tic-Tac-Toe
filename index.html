@@ -22,6 +22,9 @@
     <source src="music.mp3">
   </audio>
 
+  <iframe src="music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+  </iframe>
+
   <audio id="clickSound">
     <source src="button2.mp3">
     </source>
@@ -30,7 +33,23 @@
 
   <div class="contener">
     <header>
-      <h1> Tic Toc Toe <i class="fab fa-angellist"></i></h1>
+      <h1> Tic Toc Toe &nbsp; <i class="fas fa-gamepad"></i></h1>
+      <div class="banner">
+        <div>
+          <input class="banner-content" type="text" name="Player1" value="" id="Player1" onkeydown="keyCode(event, id )">
+          <h2 class="banner-content" id="Player1Name" onclick="bannerFun(id)">Player 1 Name</h2>
+          <i class="fas fa-user"></i>
+        </div>
+        vs
+        <div>
+          <input class="banner-content" type="text" name="Player2" value="" id="Player2" onkeydown="keyCode(event, id )">
+          <h2 class="banner-content" id="Player2Name" onclick="bannerFun(id)">Player 2 Name</h2>
+          <i class="fas fa-user"></i>
+
+        </div>
+
+      </div>
+
     </header>
     <main>
       <div class="game">
@@ -76,12 +95,11 @@
       <div class="btn-box">
         <button id="buttonR" type="button" name="button"> <i class="fas fa-sync"></i>
         </button>
-        <h2 id="showPlayer">1Player</h2>
       </div>
       <div class="optionPlay">
-        <button type="button" id="twoPlayer" name="button" onclick="gameMode(id)">two Player</button>
-        <button type="button" id="easyMode" name="button" onclick="gameMode(id)">easy Mode</button>
-        <button type="button" id="hardMode" name="button" onclick="gameMode(id)">hard Mode</button>
+        <button type="button" id="twoPlayer" name="button" onclick="gameMode(id)">two Player <i class="fas fa-user-friends"></i></button>
+        <button type="button" id="easyMode" name="button" onclick="gameMode(id)">easy Mode <i class="fas fa-robot"></i></button>
+        <button type="button" id="hardMode" name="button" onclick="gameMode(id)">hard Mode <i class="fas fa-robot"></i></button>
       </div>
   </div>
   </main>

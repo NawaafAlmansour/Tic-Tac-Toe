@@ -18,7 +18,8 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
-    background-color:  #1A1D24;
+    background: linear-gradient( rgba(47,45,35,.61), #22252E ,#1A1D24 ,#0F1013);
+
     /* background-color:  #f3f0ed; */
     color: #fff;
     font-family: sans-serif;
@@ -28,10 +29,31 @@ header{
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  border: 10px solid #fff;
+  border: 8px outset #fff;
   border-radius: 20px;
   margin-bottom: 5px;
   width: 500px;
+
+}
+.banner{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 5px;
+}
+.banner-content{
+  font-size:19px;
+  margin: 3px;
+}
+input.banner-content {
+display:none;
+  color:white;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline:none;
+  transition:height 1s;
+  background-color:rgba(0, 0, 0, 0);
+
 
 }
 footer{
@@ -62,8 +84,9 @@ h1{
     width: 500px;
     height: 500px;
     background-color: hsla(50,14%,16%,.21);
+    background: linear-gradient(rgba(47,45,35,.21), rgba(47,45,35,.61));
     margin: auto;
-    border: 10px solid #fff;
+    border: 8px outset #fff;
     border-radius: 20px;
 
 }.ruler-m{
@@ -182,7 +205,7 @@ color: #3555a1;
 
 }
 .btn-box{
-  border: 10px solid #fff;
+  border: 8px outset #fff;
   border-radius: 20px;
   width: 500px;
   margin: 0 auto;
@@ -231,11 +254,12 @@ button:active {
 }
 .endgame{
   display: none;
-  width:200px;
-  top:120px;
-  background-color:aqua;
+  width:350px;
+  height: 200px;
+  top: 260px;
+  background-color: rgba(10,10,10,.64);
   position: absolute;
-  left: 50%;
+  left: 43%;
   margin-left: -100px;
   padding-top: 50px;
   padding-bottom: 5px;
@@ -243,6 +267,11 @@ button:active {
   border-radius: 5px;
   color: white;
   font-size: 2em;
+}
+
+.endgame button{
+  margin: auto;
+  margin-top: 50px;
 }
 
 .optionPlay{
