@@ -9,18 +9,22 @@ geay :#81899B
 grean : #F9FFEE;
 golde : #EFBB35
 golde bron : #302E24
-blue dark : #1A1D24
+bluedark : #1A1D24
 --top2: #28313E;
 #d60f74
 #757575
+#005581
+#72cdf4
+#ffd200
+#ffe552
+#ffb511
+#1295d8
 */
 body {
     margin: 0;
     padding: 0;
     width: auto;
-    background: linear-gradient( rgba(47,45,35,.61), #22252E ,#1A1D24 ,#0F1013);
-
-    /* background-color:  #f3f0ed; */
+    background: linear-gradient(rgba(91,83,44,.61), rgba(47,45,35,.81), #22252E ,#1A1D24 ,#0F1013);
     color: #fff;
     font-family: sans-serif;
   }
@@ -79,17 +83,35 @@ h1{
     padding: 10px;
 }
 
-
 .game {
     width: 500px;
     height: 500px;
     background-color: hsla(50,14%,16%,.21);
-    background: linear-gradient(rgba(47,45,35,.21), rgba(47,45,35,.61));
+    /* background: linear-gradient(rgba(47,45,35,.21), rgba(47,45,35,.61)); */
     margin: auto;
     border: 8px outset #fff;
     border-radius: 20px;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 
-}.ruler-m{
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color:  rgba(255,229,82,.23);}
+  to {background-color:  rgba(255,181,17,.22);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color:  rgba(11,112,185,.23);}
+  to {background-color:  rgba(31,58,71,.41);}
+}
+
+
+.ruler-m{
   position:absolute;
   display: none;
 
@@ -105,19 +127,7 @@ h1{
   left: 50px;
   z-index: 4;
 }
-.ruler2{
-  width: 20px;
-  height:400px;
-  background-color: rgba(233,255,55,.77);
-  position:relative;
-  /* top: 135px; */
-  /* top: 255px; */
-  top: 25px;
-  /* left: 110px; */
-  /* left: 240px; */
-  /* left: 380px; */
-  z-index: 3;
-}
+
 .board{
   margin: 50px auto;
   width: 400px;
@@ -138,6 +148,8 @@ h1{
   margin: 0;
   background-color: #1A1D24;
   display: block;
+  opacity: 0.8;
+
 }
 .square:nth-of-type(1){
   border-right: 10px solid #fff;
@@ -219,8 +231,6 @@ color: #3555a1;
 button{
   width: 200px;
   height: 60px;
-  background-color:  #FEE6C0;
-  border: 1px solid #81899B;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
@@ -234,10 +244,10 @@ button{
   font-size:22px;
   color:#F0F0F0;
   border-radius:10px;
-  border-bottom:4px solid #0045A6;
+  border-bottom:4px solid #005581;
   box-shadow: 3px 3px 9px #999;
   user-select: none;
-  background: linear-gradient(#00C8F8, #0067F7);
+  background: linear-gradient(#1295d8, #005581);
   transition: background 0.05s linear;
   background-size:1px 200px;
   transition: all .05s linear;
@@ -249,7 +259,7 @@ button:hover{
 
 button:active {
   box-shadow: 2px 2px 2px #777;
-  border-bottom:1px solid #0045A6;
+  border-bottom:1px solid #005581;
   transform: translateY(3px);
 }
 .endgame{
