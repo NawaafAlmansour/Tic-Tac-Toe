@@ -24,7 +24,10 @@ body {
     margin: 0;
     padding: 0;
     width: auto;
-    background: linear-gradient(rgba(91,83,44,.61), rgba(47,45,35,.81), #22252E ,#1A1D24 ,#0F1013);
+    /* background: linear-gradient(rgba(91,83,44,.61), rgba(47,45,35,.81), #22252E ,#1A1D24 ,#0F1013); */
+    background-image: url(../GifSpace.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     font-family: sans-serif;
   }
