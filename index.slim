@@ -1,0 +1,85 @@
+doctype html
+html dir="ltr" lang="en"
+head
+meta charset="utf-8" /
+meta content="play, tic toc tac" name="Keywords" /
+meta content="en" name="language" /
+meta content=("play tic toc tac ") name="description" /
+link href="icon.jpg" rel="icon" type="image/x-icon" /
+link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet" /
+link href="fontawesome-free-5.9.0-web/css/fontawesome.css" rel="stylesheet" /
+link href="fontawesome-free-5.9.0-web/css/brands.css" rel="stylesheet" /
+link href="fontawesome-free-5.9.0-web/css/solid.css" rel="stylesheet" /
+link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" /
+link href="css/normalize.css" rel="stylesheet" /
+link href="css/style.css" rel="stylesheet" /
+link href="css/animate.css" rel="stylesheet" /
+link href="animate.css/animate.css" rel="stylesheet" /
+link href="animate.css/animate.min.css" rel="stylesheet" /
+/! load all styles
+meta content="width=device-width, initial-scale=1.0" name="viewport" /
+title Tic Tac Toc
+body
+audio#playAudio autoplay="" loop=""
+source src="music.mp3"
+iframe#iframeAudio allow="autoplay" src="music.mp3" style="display:none"
+audio#clickSound
+source src="button2.mp3"
+.contener
+header.animated.fadeInUp
+h1.animated.tada
+| Tic Toc Toe &nbsp;
+i.fas.fa-gamepad.animated.shake
+.banner
+div
+input#Player1.banner-content name="Player1" onkeydown="keyCode(event, id )" type="text" value="" /
+h2#Player1Name.banner-content.animated.tada.jackInTheBox onclick="bannerFun(id)" Player 1 Name
+i.fas.fa-user.animated.shake
+| vs
+div
+input#Player2.banner-content name="Player2" onkeydown="keyCode(event, id )" type="text" value="" /
+h2#Player2Name.banner-content.animated.tada onclick="bannerFun(id)" Player 2 Name
+i.fas.fa-user.animated.shake
+main
+.game
+.ruler-m
+.ruler1
+.ruler2
+.board.animated.flipInX
+#0.square.top.left
+#1.square.top
+#2.square.top.right
+#3.square.middle.left
+#4.square.middle
+#5.square.middle.right
+#6.square.bottom.left
+#7.square.bottom
+#8.square.bottom.right
+.endgame.animated.fadeInUp
+.banner-vector
+.text.jackInTheBox
+button name="button" onclick="startGame()" type="button" start Game
+.btn-box.animated.fadeInDown
+button#buttonR name="button" type="button"
+i.fas.fa-sync
+.optionPlay
+button#twoPlayer name="button" onclick="gameMode(id)" type="button"
+| two Player
+i.fas.fa-user-friends
+button#easyMode name="button" onclick="gameMode(id)" type="button"
+| easy Mode
+i.fas.fa-robot
+button#hardMode name="button" onclick="gameMode(id)" type="button"
+| hard Mode
+i.fas.fa-robot
+footer
+p © Copyright 2019, nawaf
+script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"
+script defer="" src="fontawesome-free-5.9.0-web/js/all.js"
+script defer="" src="fontawesome-free-5.9.0-web/js/brands.js"
+script defer="" src="fontawesome-free-5.9.0-web/js/solid.js"
+script defer="" src="fontawesome-free-5.9.0-web/js/fontawesome.js"
+script src="main.js" type="text/javascript"
+/! <script type="text/javascript" src="js/app.js">
+  < /script /
+  !load all styles

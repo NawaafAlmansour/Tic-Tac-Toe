@@ -7,13 +7,16 @@
   <meta name="language" content="en" />
   <meta name="description" content="play tic toc tac " />
   <link rel="icon" href="icon.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
   <link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
   <link href="fontawesome-free-5.9.0-web/css/fontawesome.css" rel="stylesheet">
   <link href="fontawesome-free-5.9.0-web/css/brands.css" rel="stylesheet">
   <link href="fontawesome-free-5.9.0-web/css/solid.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="animate.css/animate.css">
+  <link rel="stylesheet" href="animate.css/animate.min.css">
 
   <!--load all styles -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,43 +27,44 @@
   <audio autoplay loop id="playAudio">
     <source src="music.mp3">
   </audio>
-
   <iframe src="music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
   </iframe>
-
   <audio id="clickSound">
     <source src="button2.mp3">
     </source>
   </audio>
-
-
   <div class="contener">
-    <header>
-      <h1> Tic Toc Toe &nbsp; <i class="fas fa-gamepad"></i></h1>
+    <header class="animated fadeInUp">
+      <h1 class="animated tada"> Tic Toc Toe &nbsp; <i class="fas fa-gamepad animated shake"></i></h1>
       <div class="banner">
         <div>
           <input class="banner-content" type="text" name="Player1" value="" id="Player1" onkeydown="keyCode(event, id )">
-          <h2 class="banner-content" id="Player1Name" onclick="bannerFun(id)">Player 1 Name</h2>
-          <i class="fas fa-user"></i>
+          <h2 class="banner-content animated tada jackInTheBox" id="Player1Name" onclick="bannerFun(id)">Player 1 Name</h2>
+          <i class="fas fa-user animated shake"></i>
         </div>
         vs
         <div>
           <input class="banner-content" type="text" name="Player2" value="" id="Player2" onkeydown="keyCode(event, id )">
-          <h2 class="banner-content" id="Player2Name" onclick="bannerFun(id)">Player 2 Name</h2>
-          <i class="fas fa-user"></i>
-
+          <h2 class="banner-content animated tada" id="Player2Name" onclick="bannerFun(id)">Player 2 Name</h2>
+          <i class="fas fa-user animated shake"></i>
         </div>
-
       </div>
 
     </header>
     <main>
-      <div class="game">
+      <!-- start-game-contener  -->
+      <div class="game-contener">
+        <!--start border-animation css -->
+        <div class="x-border x5-border"></div>
+        <div class="x-border x6-border"></div>
+        <div class="x-border x7-border"></div>
+        <div class="x-border x8-border"></div>
+        <!--end-border-animation css -->
         <div class="ruler-m">
           <div class="ruler1"> </div>
           <div class="ruler2"> </div>
         </div>
-        <div class="board">
+        <div class="board  animated flipInX">
           <div class="square top left" id="0"></div>
           <div class="square top" id="1"></div>
           <div class="square top right" id="2"></div>
@@ -72,12 +76,20 @@
           <div class="square bottom right" id="8"></div>
         </div>
       </div>
+      <!-- end game-contener  -->
 
-      <div class="endgame">
-        <div class="text"> </div>
+      <div class="endgame  animated fadeInUp">
+        <div class="x-border x2-border"></div>
+        <div class="x-border x3-border"></div>
+        <div class="x-border x4-border"></div>
+        <div class="x-border x1-border"></div>
+
+        <div class="banner-vector ">
+          <div class="text jackInTheBox animated rubberBand flash"> </div>
+        </div>
         <button onclick="startGame()" type="button" name="button">start Game</button>
       </div>
-      <div class="btn-box">
+      <div class="btn-box animated fadeInDown">
         <button id="buttonR" type="button" name="button"> <i class="fas fa-sync"></i>
         </button>
       </div>

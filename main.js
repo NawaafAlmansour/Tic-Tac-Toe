@@ -1,7 +1,7 @@
 var playBord;
-const humanPlayer = '<i class="far fa-circle a-circle">';
-const humanPlayer2 = '<i class="fas fa-times x-icon"></i>';
-const robot = '<i class="fas fa-times x-icon"></i>';
+const humanPlayer = '<i class="far fa-circle a-circle animated tada jackInTheBox"></i>';
+const humanPlayer2 = '<i class="fas fa-times x-icon animated tada jackInTheBox"></i>';
+const robot = '<i class="fas fa-times x-icon animated  jackInTheBox"></i>';
 let value;
 let losePlayer;
 const winCombos = [
@@ -49,7 +49,7 @@ function startGame() {
   }
 }
 
-
+//
 function turnClick(sq) {
   if (comp == 0) {
     if (!checkWin(playBord, humanPlayer) && !checkTie()) {
