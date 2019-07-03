@@ -68,9 +68,13 @@ display:none;
   outline:none;
   transition:height 1s;
   background-color:rgba(0, 0, 0, 0);
-
+}
+span{
+margin-right: 15px;
+font-size:19px;
 
 }
+
 footer{
   padding: 40px;
   width:100%;
@@ -161,6 +165,10 @@ h1{
   display: block;
   opacity: 0.8;
 
+}
+.square:hover{
+  background-position:100px;
+  background-color:#33FFE7;
 }
 .square:nth-of-type(1){
   border-right: 10px solid #fff;
@@ -266,6 +274,7 @@ button{
 
 button:hover{
   background-position:100px;
+border: 5px solid rgba(255,255,255,.5);
 }
 
 button:active {
@@ -420,7 +429,16 @@ to {  border: 50px solid blue;
 .optionPlay{
 padding-top: 20px;
 }
+.optionPlay button{
+  width: 300px;
+  margin: 15px auto;
+}
+#buttonR{
+  width: 300px;
+  margin: 10px auto;
+  background: linear-gradient(#D71230, #F26F6F);
 
+}
 /***  SELECT ** */
  select {
   position: relative;
@@ -510,10 +528,16 @@ body{
    left: 32%;
 
 }
-.x-border{
+.game-contener .x-border{
 display: none;
 }
 
+.optionPlay button{
+  width: 250px;
+}
+#buttonR{
+  width: 200px;
+}
 }@media(max-width:350px) {
 
 }@media(min-width:421px) and (max-height:450px) {

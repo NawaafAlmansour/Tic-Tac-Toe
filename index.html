@@ -6,7 +6,10 @@
   <meta name="Keywords" content="play, tic toc tac">
   <meta name="language" content="en" />
   <meta name="description" content="play tic toc tac " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" href="icon.jpg" type="image/x-icon">
+  <!--start css file all styles -->
   <link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
   <link href="fontawesome-free-5.9.0-web/css/fontawesome.css" rel="stylesheet">
   <link href="fontawesome-free-5.9.0-web/css/brands.css" rel="stylesheet">
@@ -17,13 +20,12 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="animate.css/animate.css">
   <link rel="stylesheet" href="animate.css/animate.min.css">
-
   <!--load all styles -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toc</title>
 </head>
 
 <body>
+  <!--start audio -->
   <audio autoplay loop id="playAudio">
     <source src="music.mp3">
   </audio>
@@ -33,6 +35,9 @@
     <source src="button2.mp3">
     </source>
   </audio>
+  <!--end- audio -->
+
+  <!--start-contener -->
   <div class="contener">
     <header class="animated fadeInUp">
       <h1 class="animated tada"> Tic Toc Toe &nbsp; <i class="fas fa-gamepad animated shake"></i></h1>
@@ -40,13 +45,13 @@
         <div>
           <input class="banner-content" type="text" name="Player1" value="" id="Player1" onkeydown="keyCode(event, id )">
           <h2 class="banner-content animated tada jackInTheBox" id="Player1Name" onclick="bannerFun(id)">Player 1 Name</h2>
-          <i class="fas fa-user animated shake"></i>
+          <span id="score1">0</span> <i class="fas fa-user animated shake"></i>
         </div>
         vs
         <div>
           <input class="banner-content" type="text" name="Player2" value="" id="Player2" onkeydown="keyCode(event, id )">
           <h2 class="banner-content animated tada" id="Player2Name" onclick="bannerFun(id)">Player 2 Name</h2>
-          <i class="fas fa-user animated shake"></i>
+          <span id="score2">0</span> <i class="fas fa-user animated shake"></i>
         </div>
       </div>
 
@@ -93,16 +98,23 @@
         <button id="buttonR" type="button" name="button"> <i class="fas fa-sync"></i>
         </button>
       </div>
+      <!-- start-optionPlay -->
       <div class="optionPlay">
         <button type="button" id="twoPlayer" name="button" onclick="gameMode(id)">two Player <i class="fas fa-user-friends"></i></button>
         <button type="button" id="easyMode" name="button" onclick="gameMode(id)">easy Mode <i class="fas fa-robot"></i></button>
         <button type="button" id="hardMode" name="button" onclick="gameMode(id)">hard Mode <i class="fas fa-robot"></i></button>
       </div>
+      <!-- end-optionPlay -->
   </div>
+  <!--end-contener -->
   </main>
+  <!--start-footer -->
   <footer>
     <p> © Copyright 2019, nawaf</p>
   </footer>
+  <!--end-footer -->
+
+  <!--start- script link js jquery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script defer src="fontawesome-free-5.9.0-web/js/all.js"></script>
   <script defer src="fontawesome-free-5.9.0-web/js/brands.js"></script>
