@@ -473,7 +473,7 @@ body{
   margin: auto;
   margin-left: 10px;
 }
-  .game-contener-contener {
+  .game-contener {
   width: 300px;
   height: 330px;
 
@@ -509,6 +509,9 @@ body{
    top: 180px;
    left: 32%;
 
+}
+.x-border{
+display: none;
 }
 
 }@media(max-width:350px) {
