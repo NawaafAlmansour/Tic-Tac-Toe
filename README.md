@@ -64,9 +64,6 @@ Products and Teams: Document your code and your code repository so others unders
 
 ![Image ](https://i.imgur.com/gUZk5kw.png)
 
----
-## Algorithm Details
-A minimax algorithm is a recursive algorithm for choosing the next move in an n-player game, usually a two-player, back and forth game. A value is associated with each position or state of the game. This value is computed by means of a position evaluation function and it indicates how good it would be for a player to reach that position. The player then makes the move that maximizes the minimum value of the position resulting from the opponent's possible following moves. If it is A's turn to move, A gives a value to each of his legal moves.
 
 ---
 ## Technical Requirements
@@ -85,17 +82,6 @@ Your Tic Tac Toe app must:
 
 ---
 
-### User Stories
-
-- As a user, I should be able to start a new tic tac toe game
-- As a user, I should be able to click on a square to add X first and then O, and so on
-- As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
-- As a user, I should not be able to click the same square twice
-- As a user, I should be shown a message when I win, lose or tie
-- As a user, I should not be able to continue playing once I win, lose, or tie
-- As a user, I should be able to play the game again without refreshing the page
-
----
 #### Potential Extra Tic Tac Toe Features
 
 - Keep track of multiple game rounds with a win, lose and tie counter
@@ -158,6 +144,9 @@ Your Tic Tac Toe app must:
 #  the move with maximum score when it is the AI
 How to make your Tic Tac Toe game unbeatable by using the minimax algorithm
 
+## Algorithm Details
+A minimax algorithm is a recursive algorithm for choosing the next move in an n-player game, usually a two-player, back and forth game. A value is associated with each position or state of the game. This value is computed by means of a position evaluation function and it indicates how good it would be for a player to reach that position. The player then makes the move that maximizes the minimum value of the position resulting from the opponent's possible following moves. If it is A's turn to move, A gives a value to each of his legal moves.
+
 
 ![Image ](https://cdn-media-1.freecodecamp.org/images/K1y8jFFT0JeL14tHaAum8lF2cs7WXsQOOp9j)
 
@@ -167,7 +156,7 @@ https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-b
 
 
 
-## Useful Resources
+##  Resources
 
 - **[MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** _(a great reference for all things Vanilla JavaScript)_
 - **[DevDocs](https://devdocs.io/)**
@@ -176,5 +165,19 @@ https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-b
 - **[GitHub Markdown Tutorial](https://guides.github.com/features/mastering-markdown/)** _(for working with Markdown)_
 
 
+- **reduce()**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+- **entries()**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+- **every()**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+- **filter()**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+- **Game Score**
+https://www.w3schools.com/graphics/game_score.asp
+- **Sound effect**
+http://soundbible.com/
+- **Animate.css**
+https://daneden.github.io/animate.css/
 
 ### Copyrights
