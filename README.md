@@ -29,6 +29,7 @@ I will be showing you how to create a Tic Tac Toe game from A to Z. using JS HTM
 - As a user, I should not be able to continue playing once I win, lose, or tie
 - As a user, I should be able to play the game again without refreshing the page
 
+![Image ](https://i.imgur.com/C3TqZjg.jpg)
 
 ---
 
@@ -63,7 +64,6 @@ Products and Teams: Document your code and your code repository so others unders
 
 ![Image ](https://i.imgur.com/gUZk5kw.png)
 
-
 ---
 ## Algorithm Details
 A minimax algorithm is a recursive algorithm for choosing the next move in an n-player game, usually a two-player, back and forth game. A value is associated with each position or state of the game. This value is computed by means of a position evaluation function and it indicates how good it would be for a player to reach that position. The player then makes the move that maximizes the minimum value of the position resulting from the opponent's possible following moves. If it is A's turn to move, A gives a value to each of his legal moves.
@@ -82,6 +82,8 @@ Your Tic Tac Toe app must:
   - We will be walking you through this process!
 - Use **semantic markup** for HTML and CSS (adhere to best practices)
 - Have well-formatted, and well-commented code
+
+---
 
 ### User Stories
 

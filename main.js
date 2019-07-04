@@ -16,6 +16,9 @@ const winCombos = [
 //Control a background sound
 document.getElementsByTagName('audio')[0].volume = 0.3;
 var audio = document.getElementById("clickSound");
+
+var audio2 = document.getElementById("winSound");
+
 //change a turn Click
 let comp = 1;
 //change the turn for  human Player
@@ -135,6 +138,7 @@ function gameOver(gameWon) {
 // display Screen function
 function displayScreen(massage) {
   document.querySelector(".endgame").style.display = "block";
+  audio2.play();
   document.querySelector(".endgame .text").innerText = massage;
 
 }
