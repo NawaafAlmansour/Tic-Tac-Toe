@@ -51,16 +51,17 @@ Products and Teams: Document your code and your code repository so others unders
 -----
 # design
 
-![Image ](https://i.imgur.com/4rCsLzy.png)
+
+![Image ](https://i.imgur.com/eFKimW5.png)
+
+
+
+![Image ](https://i.imgur.com/Mbk80ua.png)
 
 
 
 
-
-
-![Image ](https://i.imgur.com/U5tEw1F.pngs=400)
-
-
+![Image ](https://i.imgur.com/gUZk5kw.png)
 
 
 ---
